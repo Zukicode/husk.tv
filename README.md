@@ -1,5 +1,5 @@
 
-## **Website for watching movie or series!**
+# **Website for watching movie or series!**
 *Hello everyone, this is the repository of my website, which is related to watching movies and TV series. For a long time I have been creating this pet project, for practice it is fully functional, and right now you can view the content.*
 
 
