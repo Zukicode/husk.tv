@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 //Styles
 import styles from './Home.module.scss';
@@ -8,14 +8,14 @@ import { BrowseMedia } from 'components/BrowseMedia';
 import { Slider } from 'components/Slider';
 
 //temp
-import { MOVIE_ROUTE, SERIES_ROUTE } from 'routes/routes';
-import { useDispatch, useSelector } from 'react-redux';
+import { Loader } from 'components/Loader';
 import {
 	fetchFourMoive,
 	fetchFourSeries,
 	fetchSliderItems,
 } from 'features/home/homeSlice';
-import { Loader } from 'components/Loader';
+import { useDispatch, useSelector } from 'react-redux';
+import { MOVIE_ROUTE, SERIES_ROUTE } from 'routes/routes';
 
 const Home = () => {
 	const dispatch = useDispatch();

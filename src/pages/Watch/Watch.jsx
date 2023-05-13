@@ -14,8 +14,8 @@ import {
 	addToCollection,
 	removeFromCollection,
 } from 'features/collection/collectionSlice';
-import { useAuth } from 'hooks/use-auth';
 import { fetchTitleById } from 'features/watch/watchSlice';
+import { useAuth } from 'hooks/use-auth';
 
 //Components
 import { Loader } from 'components/Loader';
@@ -24,8 +24,6 @@ import { Player } from './Player';
 //Other
 import { formatTime } from 'utils/formatSecond';
 import { formatNumber, inArray } from 'utils/utils';
-import { addDoc, collection } from 'firebase/firestore';
-import { db } from './../../firebase.js';
 
 const Watch = () => {
 	const { id } = useParams();
