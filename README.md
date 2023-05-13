@@ -3,7 +3,7 @@
 
 
 **Screenshot from website.**
-![Screenshot from website.](https://i.ibb.co/S3JzGwG/image.png)
+![Screenshot from website.](https://gcdnb.pbrd.co/images/2h8uzB1blrJr.png?o=1)
 
 #### Tech Stack:
  1. React
