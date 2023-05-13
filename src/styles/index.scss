@@ -1,0 +1,50 @@
+@use './normalize';
+
+:root {
+	/*Typography*/
+	--fw-light: 300;
+	--fw-normal: 400;
+	--fw-bold: 700;
+
+	/*Colors*/
+	--white: #ffffff;
+	--gray: #f5f3f4;
+	--gray-text: #a1a1a1;
+
+	--dark-gray: #d3d3d3;
+	--cream: #b1a7a6;
+
+	--red-light: #e5383b;
+	--red-dark: #660708;
+	--primary: #a4161a;
+
+	--dark-second: #20262b;
+	--dark: #161a1d;
+	--black: #0b090a;
+
+	--bg: #161a1d;
+
+	--shadow: 0px 0px 7px rgb(101, 101, 101);
+}
+
+body {
+	background-color: var(--dark);
+	font-family: 'Open Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--red-dark);
+}

@@ -1,0 +1,82 @@
+.profileModal {
+	width: 280px;
+	padding: 20px;
+	background-color: var(--dark-second);
+	border-radius: 12px;
+	position: absolute;
+	top: 0px;
+	right: 60px;
+	z-index: 20;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	box-shadow: 0px 0px 10px var(--dark);
+
+	@media (max-width: 400px) {
+		width: 250px;
+		right: 0px;
+		top: 58px;
+	}
+
+	.divider {
+		width: 100%;
+		height: 0.5px;
+		background-color: var(--cream);
+		border-radius: 50%;
+	}
+
+	.title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.description {
+			h1 {
+				color: var(--gray);
+				font-size: 26px;
+			}
+
+			p {
+				color: var(--cream);
+				font-size: 15x;
+			}
+		}
+	}
+
+	.buttons {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		button {
+			width: 100%;
+			height: 45px;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			font-size: 16px;
+			background: none;
+			border: none;
+			color: var(--gray);
+			cursor: pointer;
+			font-weight: 300;
+			border-radius: 20px;
+			padding: 0px 10px;
+			transition: all 0.4s;
+
+			&:hover {
+				transition: all 0.4s;
+				background: rgba(#000000, 0.3);
+			}
+
+			svg {
+				width: 28px;
+				height: 28px;
+				position: relative;
+				top: 3px;
+				fill: var(--gray);
+			}
+		}
+	}
+}

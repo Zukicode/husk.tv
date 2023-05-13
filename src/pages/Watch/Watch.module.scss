@@ -1,0 +1,119 @@
+.Watch {
+	max-width: 1200px;
+	width: calc(100% - 340px);
+	padding: 20px 20px 40px 20px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
+	.player {
+		width: 100%;
+		height: 500px;
+		background-color: var(--dark-second);
+		border-radius: 10px;
+	}
+
+	button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 6px;
+		background: var(--primary);
+		color: var(--gray);
+		border: none;
+		border-radius: 4px;
+		font-weight: 500;
+		font-size: 16px;
+		padding: 10px 20px;
+		margin: 20px auto;
+		cursor: pointer;
+		text-transform: uppercase;
+		letter-spacing: -1px;
+		transition: all 0.4s;
+
+		&:hover {
+			transition: all 0.4s;
+			box-shadow: 0px 0px 20px var(--primary);
+		}
+
+		svg {
+			width: 30px;
+			height: 30px;
+			position: relative;
+			top: 1px;
+		}
+	}
+
+	.detalies {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		margin: auto;
+
+		.title {
+			color: var(--gray);
+		}
+
+		.description {
+			p {
+				text-align: center;
+				max-width: 700px;
+				color: var(--cream);
+			}
+		}
+
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			place-items: center;
+			gap: 20px;
+			margin-top: 20px;
+
+			@media (max-width: 1220px) {
+				grid-template-columns: 1fr 1fr;
+			}
+
+			@media (max-width: 470px) {
+				grid-template-columns: 1fr;
+			}
+
+			.detail {
+				width: 200px;
+				height: 100px;
+				border-radius: 20px;
+				display: flex;
+				flex-direction: column;
+				gap: 5px;
+				justify-content: center;
+				align-items: center;
+				background-color: rgba(#000000, 0.3);
+
+				p {
+					color: var(--gray);
+					font-weight: 700;
+					font-size: 18px;
+				}
+
+				span {
+					color: var(--primary);
+					font-weight: 500;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		width: 100%;
+	}
+}
+
+.Loader {
+	width: 100%;
+	height: calc(100vh - 100px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

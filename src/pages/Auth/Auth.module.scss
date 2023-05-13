@@ -1,0 +1,24 @@
+.auth {
+	width: 500px;
+	margin: 50px auto;
+	background-color: var(--dark-second);
+	border-radius: 12px;
+	position: relative;
+	right: 30px;
+
+	@media (max-width: 768px) {
+		right: 0px;
+	}
+
+	@media (max-width: 500px) {
+		width: 400px;
+	}
+
+	@media (max-width: 420px) {
+		width: 300px;
+	}
+
+	@media (max-width: 350px) {
+		width: 270px;
+	}
+}

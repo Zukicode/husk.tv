@@ -1,0 +1,58 @@
+.background {
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+	background: rgba(#000000, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -20;
+	transition: all 0.4s;
+	opacity: 0;
+
+	&.show {
+		transition: all 0.4s;
+		z-index: 20;
+		opacity: 1;
+
+		.sidebar {
+			transform: translateX(0%);
+			transition: all 0.4s;
+		}
+	}
+
+	.sidebar {
+		height: 100%;
+		width: 280px;
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: var(--dark);
+		transition: all 0.4s;
+		transform: translateX(-100%);
+
+		.logo {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 50px;
+
+			img {
+				width: 100px;
+				height: 35px;
+			}
+
+			svg {
+				width: 40px;
+				height: 40px;
+				fill: var(--gray);
+				position: relative;
+				top: 4px;
+				cursor: pointer;
+			}
+		}
+	}
+}
